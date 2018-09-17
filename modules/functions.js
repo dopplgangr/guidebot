@@ -103,7 +103,7 @@ module.exports = (client) => {
       });
       return false;
     } catch (e) {
-      return `Unable to load command ${commandName}: ${e}`;
+      return `Unable to load command ${commandName}: ${e.stack}`;
     }
   };
 
