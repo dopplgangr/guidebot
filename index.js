@@ -21,6 +21,8 @@ client.config = require("./config.js");
 // client.config.token contains the bot's token
 // client.config.prefix contains the message prefix
 
+client.blizzard = require('blizzard.js').initialize({ apikey: client.config.blizzard_api_key, origin:client.config.blizzard_origin});
+
 // Require our logger
 client.logger = require("./modules/Logger");
 
